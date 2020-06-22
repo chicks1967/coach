@@ -12,6 +12,12 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+.row {
+  width: 100%;
+}
+.container {
+  text-align: center;
+}
 
 h1 {
   font-size: 4rem;
@@ -25,6 +31,11 @@ h1 {
 h2 {
   text-align: center;
   color: #fff;
+}
+
+h3 {
+  color: #0165b3;
+  text-align: center;
 }
 h4 {
   margin-bottom: 16px;
@@ -41,24 +52,26 @@ h6 {
 p {
   color: #fff;
   font-size: 1.2rem;
+  margin: 0 2rem;
 }
 
 .fleet {
   background-color: #0165b3;
-  text-align: center;
-  padding-top: 4rem;
   border-top: solid 3px #f26d0e;
   border-bottom: solid 3px #f26d0e;
+  text-align: center;
+  padding-top: 4rem;
 }
 
 .photos {
-  padding: 0;
-
   background: #fff;
+  padding: 2rem;
+  display: inline-block;
 }
 
 .fleet-img {
   border: 1px solid #fff;
+  width: 250px;
 }
 
 .drivers {
@@ -78,11 +91,6 @@ p {
   width: 50%;
   margin-right: auto;
   margin-left: auto;
-}
-
-h3 {
-  color: #0165b3;
-  text-align: center;
 }
 
 .public {
@@ -105,13 +113,13 @@ testimonial-heading {
 
 .testimonial-stars {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 section {
   background-color: #0165b3;
   color: #fff;
-  padding: 7% 15%;
+  padding: 7%;
   text-align: center;
   border-top: solid 3px #f26d0e;
   border-bottom: solid 3px #f26d0e;
@@ -129,6 +137,7 @@ section h3 {
 section h3 {
   margin-bottom: 1.4rem;
 }
+/*media query responsive section*/
 
 @media (max-width: 700px) {
   .public {
@@ -138,10 +147,15 @@ section h3 {
   .testimonial {
     width: 100%;
   }
-
+  .testimonial-stars,
   .dart,
   .photo {
     display: none;
+  }
+}
+@media (max-width: 400px) {
+  .photos {
+    padding: 0;
   }
 }
 
@@ -153,7 +167,7 @@ section h3 {
 
 .spotters-text {
   color: #0165b3;
-  margin: 0 30%;
+  margin: 10%;
   border: 10px solid #0165b3;
   text-align: center;
   padding: 0.5rem;
@@ -169,7 +183,7 @@ i {
   font-size: 8rem;
   color: #0165b3;
 }
-
+/*outer icon images in spotter section*/
 .photo {
   transform: rotate(25deg);
 }
@@ -177,7 +191,7 @@ i {
 .dart {
   transform: rotate(-25deg);
 }
-
+/*centre icon image in spoter section*/
 .man {
   font-size: 12rem;
   padding-top: 2rem;
